@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Assaingment #3</title>
+    <style>
+      * {
+        font-family: font-family= "Manrope", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: font-family= "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f4f4f4]">
+    <!-- Navbar Section -->
+    <header class="container m-auto">
+      <div class="navbar bg-[#f4f4f4]">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost lg:hidden"
+            ></div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <div class="flex items-center justify-center gap-2 cursor-pointer">
+            <i
+              class="fa-solid fa-arrow-right p-3 bg-[#ABEF5F] text-[#1C1C1C] text-[15px] rounded-full font-800 -rotate-45"
+            ></i>
+
+            <a class="text-[32px] font-[Manrope] text-[#212121] font-extrabold"
+              >Rinterio</a
+            >
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-6">
+          <button class="btn btn-circle">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="btn btn-circle">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <a class="btn">Book Consult</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Banner Section -->
+      <section class="bg-gradient-to-t from-white to-[#f4f4f4]">
+        <div class="container mx-auto">
+          <div class="hero">
+            <div class="hero-content text-center">
+              <div class="flex flex-col items-center justify-center">
+                <div>
+                  <img src="./assets/banner.png" alt="" />
+                </div>
+                <div class="w-4/5 mx-auto">
+                  <h1 class="text-5xl font-bold text-[#212121] text-[64px]">
+                    A barn house of this design has a striking appearance
+                  </h1>
+                  <p class="py-6 w-3/4 mx-auto">
+                    The barn house captivates with its blend of rustic charm and
+                    modern sophistication, featuring weathered wood, sleek metal
+                    accents, and large windows that flood the space with natural
+                    light.
+                  </p>
+                  <button
+                    class="bg-[#ABEF5F80] py-[12px] px-[24px] text-center text-xl rounded-full"
+                  >
+                    View Details
+                    <i
+                      class="fa-solid fa-arrow-right h-8 w-8 p-2 bg-[#ABEF5F] text-[#1C1C1C] text-[15px] rounded-full font-800 -rotate-45 ml-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PLaces -->
+      <section class="container py-24 mx-auto items-center justify-center">
+        <div class="grid grid-cols-2 gap-5">
+          <div>
+            <button
+              class="btn btn-md py-2 px-4 rounded-3xl text-[#494949] font-[manrope] bg-white hover:bg-white"
+            >
+              <i
+                class="fa-solid fa-arrow-right font-700 mr-2 text-[#494949]"
+              ></i>
+              About Us
+            </button>
+            <div class="flex lg:flex-col justify-start items-baseline">
+              <h2
+                class="text-[40px] font-black w-3/5 text-[#212121] mt-4 mb-6 font-[manrope]"
+              >
+                We design thoughtful, liveable spaces
+              </h2>
+              <p
+                class="font-[manrope] text-base font-500 text-[#494949] w-4/5 mb-6"
+              >
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+            </div>
+            <div
+              class="flex items-center bg-white justify-start p-6 gap-4 rounded-2xl shadow-md hover:shadow-lg my-5"
+            >
+              <div><img src="./assets/commercial.png" alt="" /></div>
+              <div>
+                <h4 class="font-[manrope] font-extrabold text-[#494949] mb-2">
+                  Commercial
+                </h4>
+                <p
+                  class="font-[manrope] text-base font-medium text-[#737373] w-3/4"
+                >
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center bg-white justify-start p-6 gap-4 rounded-2xl shadow-md hover:shadow-lg"
+            >
+              <div><img src="./assets/residential.png" alt="" /></div>
+              <div>
+                <h4 class="font-[manrope] font-extrabold text-[#494949] mb-2">
+                  Residential
+                </h4>
+                <p
+                  class="font-[manrope] text-base font-medium text-[#737373] w-3/4"
+                >
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div><img src="./assets/Rectangle.png" alt="" /></div>
+        </div>
+      </section>
+      <!-- Statistics -->
+      <section>
+        <div class="container mx-auto">
+          <div
+            class="flex items-center justify-between bg-white p-8 rounded-3xl shadow-sm gap-5"
+          >
+            <div class="flex flex-col items-center justify-center py-3 px-3">
+              <div class="stat-title text-center text-4xl">
+                <i class="fa-regular fa-comment"></i>
+              </div>
+              <div
+                class="font-[manrope] text-4xl font-extrabold text-[#494949] my-1"
+              >
+                835+
+              </div>
+              <div
+                class="stat-desc font-[manrope] text-base font-medium text-[#737373]"
+              >
+                Happy Client Review
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center py-3 px-3">
+              <div class="stat-title text-center text-4xl">
+                <i class="fa-regular fa-newspaper"></i>
+              </div>
+              <div
+                class="font-[manrope] text-4xl font-extrabold text-[#494949] my-1"
+              >
+                50+
+              </div>
+              <div
+                class="stat-desc font-[manrope] text-base font-medium text-[#737373]"
+              >
+                Work Departments
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center py-3 px-3">
+              <div class="stat-title text-center text-4xl">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div
+                class="font-[manrope] text-4xl font-extrabold text-[#494949] my-1"
+              >
+                30+
+              </div>
+              <div
+                class="stat-desc font-[manrope] text-base font-medium text-[#737373]"
+              >
+                Our Happy Client
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center py-3 px-3">
+              <div class="stat-title text-center text-4xl">
+                <i class="fa-solid fa-user-group"></i>
+              </div>
+              <div
+                class="font-[manrope] text-4xl font-extrabold text-[#494949] my-1"
+              >
+                307+
+              </div>
+              <div
+                class="stat-desc font-[manrope] text-base font-medium text-[#737373]"
+              >
+                Staff Members
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>This is footer</footer>
+  </body>
+</html>
